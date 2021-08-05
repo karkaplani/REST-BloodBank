@@ -36,13 +36,17 @@ public interface MyConstants {
     public static final String RESOURCE_PATH_ID_PATH =  "/{" + RESOURCE_PATH_ID_ELEMENT + "}";
     public static final String CREDENTIAL_RESOURCE_NAME = "credential";
     public static final String PERSON_RESOURCE_NAME =  "person";
+    public static final String ADDRESS_RESOURCE_NAME =  "address";
     public static final String ORDER_RESOURCE_NAME =  "order";
     public static final String ORDERLINE_RESOURCE_NAME =  "orderLine";
     public static final String PRODUCT_RESOURCE_NAME =  "product";
     public static final String BLOODBANK_RESOURCE_NAME =  "bloodbank";
+    public static final String BLOODDONATION_RESOURCE_NAME =  "bloodDonation";
+    public static final String DONATIONRECORD_RESOURCE_NAME =  "donationRecord";
     public static final String CUSTOMER_ADDRESS_SUBRESOURCE_NAME =  "address";
     public static final String CUSTOMER_ADDRESS_RESOURCE_PATH =
         RESOURCE_PATH_ID_PATH + SLASH + CUSTOMER_ADDRESS_SUBRESOURCE_NAME;
+    public static final String ADDRESS_STREET_NUMBER_SUBRESOURCE = RESOURCE_PATH_ID_PATH + SLASH + "streetNumber";
 
     //Security constants
     public static final String USER_ROLE = "USER_ROLE";

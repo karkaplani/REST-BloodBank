@@ -35,7 +35,7 @@ public class Contact extends PojoBaseCompositeKey< ContactPK> implements Seriali
 	private Person owner;
 
 	@MapsId( "phoneId")
-	@ManyToOne( cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH }, optional = false, fetch = FetchType.LAZY)
+	 
 	@JoinColumn( name = "phone_id", referencedColumnName = "phone_id", nullable = false)
 	private Phone phone;
 

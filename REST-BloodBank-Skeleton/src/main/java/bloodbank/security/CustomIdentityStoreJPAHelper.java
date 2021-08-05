@@ -26,6 +26,7 @@ import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
+import javax.xml.registry.Query;
 
 @Singleton
 public class CustomIdentityStoreJPAHelper {
@@ -43,6 +44,16 @@ public class CustomIdentityStoreJPAHelper {
 		//       Call the typed query's getSingleResult() inside a try-catch statement
 		//       The exception to catch is NoResultException
 		//       Be sure to assign the SecurityUser object returned by getSingleResult() to variable "user" inside the try block and return it 
+		//there was no query import i will ask about it
+		TypedQuery <SecurityUser> query = em.createNamedQuery(SECURITY_USER_BY_NAME_QUERY, SecurityUser.class);//????????
+		query.setParameter(PARAM1, username);
+		try{
+		user = query.getSingleResult();
+
+		} catch (NoResultException e) {
+			LOG.debug ("NO Result Exception triggerd={}" ,e);
+		}
+
 		return user;
 	}
 
