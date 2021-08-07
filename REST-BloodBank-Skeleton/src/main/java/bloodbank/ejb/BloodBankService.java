@@ -53,7 +53,10 @@ import org.hibernate.Hibernate;
 import bloodbank.entity.Address;
 import bloodbank.entity.BloodBank;
 import bloodbank.entity.BloodDonation;
+import bloodbank.entity.BloodType;
+import bloodbank.entity.Contact;
 import bloodbank.entity.Person;
+import bloodbank.entity.Phone;
 import bloodbank.entity.SecurityRole;
 import bloodbank.entity.SecurityUser;
 
@@ -154,5 +157,87 @@ public class BloodBankService implements Serializable {
             em.remove(sUser);
             em.remove(person);
         }
+    }
+    
+    public List<Phone> getAllPhones() {
+    	return null;
+    }
+    
+    public Phone getPhoneById(int id) {
+    	return null;
+    }
+    
+    public Phone persistPhone(Phone phone) {
+    	return null;
+    }
+    
+    public Phone updatePhone(int id, Phone phone) {
+		return null;
+    }
+    
+    public void deletePhoneById(int id) {
+    }
+    
+    //////////////////////////////////////
+    
+    public List<BloodType> getAllBloodTypes() {
+    	return null;
+    }
+    
+    public BloodType getBloodTypeById(int id) {
+    	return null;
+    }
+    
+    public BloodType persistBloodType(BloodType bloodType) {
+    	return null;
+    }
+    
+    public BloodType updateBloodType(int id, BloodType bloodType) {
+		return null;
+    }
+    
+    public void deleteBloodTypeById(int id) {
+    }
+    
+    //////////////////////////////////////////
+    
+    public List<Contact> getAllContacts() {
+    	return null;
+    }
+    
+    public Contact getContactById(int id) {
+    	return null;
+    }
+    
+    public Contact persistContact(Contact contact) {
+    	return null;
+    }
+    
+    public Contact updateContact(int id, Contact contact) {
+		return null;
+    }
+    
+    public void deleteContactById(int id) {
+    }
+    
+    ////////////////////////////////////////
+    
+    public List<SecurityRole> getAllSecurityRoles() {
+    	return null;
+    }
+    
+    public Contact getSecurityRoleById(int id) {
+    	return null;
+    }
+    
+    public Contact persistSecurityRole(SecurityRole securityRole) {
+    	return null;
+    }
+    
+    public Contact updateSecurityRole(int id, SecurityRole securityRole) {
+		return null;
+    }
+    
+    public void deleteSecurityRoleById(int id) {
     }
 }
